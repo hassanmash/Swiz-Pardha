@@ -9,7 +9,9 @@
     "test": "ng test",
     "build-gh": "ng build --base-href '/swiz-pardha/'",
     "copy-gh": "copy dist\\swiz-pardha\\browser\\index.html dist\\swiz-pardha\\browser\\404.html",
-    "deploy-gh": "npx angular-cli-ghpages --dir=dist/swiz-pardha/browser"
+    "deploy-gh": "npx angular-cli-ghpages --dir=dist/swiz-pardha/browser",
+    "deploy-all-gh": "ng build --base-href '/swiz-pardha/' && copy dist\\swiz-pardha\\browser\\index.html dist\\swiz-pardha\\browser\\404.html && npx angular-cli-ghpages --dir=dist/swiz-pardha/browser",
+    "git-deploy": "ng deploy --base-href=https://hassanmash.github.io/Swiz-Pardha/"
   },
   "private": true,
   "dependencies": {
