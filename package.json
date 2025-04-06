@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy-gh": "ng build --base-href '/swiz-pardha/' && cp dist/swiz-pardha/browser/index.html dist/swiz-pardha/browser/404.html && npx angular-cli-ghpages --dir=dist/swiz-pardha/browser"
   },
   "private": true,
   "dependencies": {
